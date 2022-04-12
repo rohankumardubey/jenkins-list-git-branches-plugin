@@ -328,9 +328,9 @@ public class ListGitBranchesParameterDefinition extends ParameterDefinition impl
             Matcher matcher = branchFilterPattern.matcher(branchName);
             if (matcher.matches()) {
                 if (matcher.groupCount() == 1) {
-                    branchSet.add(matcher.group(1));
+                    branchSet.add(matcher.group(1).replace("refs/heads/", ""));
                 } else {
-                    branchSet.add(branchName);
+                    branchSet.add(branchName.replace("refs/heads/", ""));
                 }
             }
         }
