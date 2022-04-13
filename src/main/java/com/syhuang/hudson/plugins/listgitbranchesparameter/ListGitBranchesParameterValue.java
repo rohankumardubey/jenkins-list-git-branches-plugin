@@ -9,3 +9,4 @@ public class ListGitBranchesParameterValue extends StringParameterValue {
         super(name, value);
     }
 }
+
