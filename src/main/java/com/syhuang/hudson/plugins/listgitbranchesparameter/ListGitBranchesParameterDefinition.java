@@ -507,4 +507,3 @@ public class ListGitBranchesParameterDefinition extends ParameterDefinition impl
         }
     }
 }
-
